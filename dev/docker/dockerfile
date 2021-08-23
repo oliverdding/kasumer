@@ -1,0 +1,4 @@
+FROM alpine:3.14
+
+RUN apk add --no-cache neovim less ripgrep curl
+RUN wget -L https://github.com/birdayz/kaf/releases/download/v0.1.40/kaf_0.1.40_Linux_x86_64.tar.gz -O - | tar -C /usr/bin -zxf - kaf
